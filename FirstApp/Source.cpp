@@ -4,14 +4,11 @@ using namespace std;	// allows to write cout
 						// instead of std::cout
 
 int main(void) {
-	string name;
-	int age;
+	int x = 5;
+	int y = 4;
 
-	cout << "Enter your name: ";
-	cin >> name;
-	cout << "Enter your age: ";
-	cin >> age;
-
-	printf("Name: %s\nAge: %d\n", name.c_str(), age);
-	return 0;
+	cout << "Is x equal to y? C++ says: ";
+	cout << boolalpha << (x == y) << endl;
+	cout << "This is true: ";
+	cout << (boolalpha) << (x == x) << endl;
 }
