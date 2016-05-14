@@ -19,6 +19,7 @@ struct Player
 
 int main(void) {
 	Player isaias;
+	Player* playerPtr = &isaias;
 	isaias.hp = 500, isaias.mp = 300;
 	isaias.initialFirst = 'I';
 	isaias.initialLast = 'P';
@@ -35,7 +36,8 @@ int main(void) {
 	cout << isaias.initialLast << endl;
 	cout << "\tname: " << isaias.name << endl;
 	cout << "\tposition: " << isaias.position.x;
-	cout << ", " << isaias.position.y << ", ";
-	cout << isaias.position.z << endl;
+	cout << ", " << isaias.position.z << ", ";
+	cout << playerPtr->position.x << endl;
+	cout << "\tmemAddress: " << playerPtr << endl;
 	return 0;
 }
