@@ -1,6 +1,9 @@
 #include <iostream>		// import io lib
 #include <string>
 #include "Header.h"
+
+#define PI 3.14
+
 using namespace std;	// allows to write cout
 						// instead of std::cout
 
@@ -28,5 +31,9 @@ int main(void) {
 
 	printNameAge(name, age);
 	cout << add(age, doubleNumber(age)) << endl;
+
+#ifdef PI
+	std::cout << PI << endl;
+#endif
 	return 0;
 }
