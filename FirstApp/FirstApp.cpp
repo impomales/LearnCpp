@@ -1,8 +1,8 @@
 #include <iostream>		// import io lib
 #include <string>
-#include "Header.h"
+#include "math.h"
 
-#define PI 3.14
+
 
 using namespace std;	// allows to write cout
 						// instead of std::cout
@@ -15,10 +15,7 @@ void printNameAge(string name, int age)
 	printf("Name: %s\n Age: %d\n", name.c_str(), age);
 }
 
-int doubleNumber(int x) 
-{
-	return x * 2;
-}
+
 
 int main(void) {
 	string name;
