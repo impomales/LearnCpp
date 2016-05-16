@@ -1,12 +1,11 @@
 #include <iostream>		// import io lib
 #include <string>
+#include "Header.h"
 using namespace std;	// allows to write cout
 						// instead of std::cout
 
 // function declaration.
 void printNameAge(string name, int age);
-int doubleNumber(int x);
-int add(int x, int y);
 
 void printNameAge(string name, int age) 
 {
