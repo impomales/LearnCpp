@@ -3,6 +3,10 @@
 using namespace std;	// allows to write cout
 						// instead of std::cout
 
+void printNameAge(string name, int age) {
+	printf("Name: %s\n Age: %d\n", name.c_str(), age);
+}
+
 int main(void) {
 	string name;
 	int age;
@@ -12,6 +16,6 @@ int main(void) {
 	cout << "Enter your age: ";
 	cin >> age;
 
-	printf("Name: %s\nAge: %d\n", name.c_str(), age);
+	printNameAge(name, age);
 	return 0;
 }
