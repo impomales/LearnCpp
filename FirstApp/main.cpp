@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdint>		// used for standardized ints.
+#include "Header.h"
 
 int main() {
 	using namespace std;
@@ -32,6 +33,9 @@ int main() {
 	// static cast, char to int
 	cout << static_cast<int>(cVal) << endl;
 	// dont use magic numbers. ex. val = val * 25...the 25 doesn't have a clear meaning.
-	// next will be consts, etc. 
+	// constants.
+	using namespace constants;
+	cout << pi << endl;
+
 	return 0;
 }
