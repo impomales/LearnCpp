@@ -8,4 +8,6 @@ namespace constants
 	const double gravity(9.8);
 }
 
+double heightOfBall(double height, int seconds);
+
 #endif
