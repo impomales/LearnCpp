@@ -1,8 +1,16 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int main()
+{
 	using namespace std;
+
+	enum Color
+	{
+		COLOR_RED,
+		COLOR_GREEN,
+		COLOR_BLUE
+	};
 
 	string myName;
 	cout << "Enter your full name: ";
