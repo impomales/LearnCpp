@@ -1,28 +1,25 @@
 #include <iostream>
 #include <string>
 
+struct Employee
+{
+	short id;
+	int age;
+	double wage;
+};
+
 int main()
 {
 	using namespace std;
 
-	enum Color
-	{
-		COLOR_RED,
-		COLOR_GREEN,
-		COLOR_BLUE
-	};
+	Employee isaias;
+	isaias.age = 27;
+	isaias.wage = 7.75;
+	isaias.id = 1;
 
-	string myName;
-	cout << "Enter your full name: ";
-	getline(cin, myName);
+	Employee mark { 2, 45, 13 };
+	cout << "age: " << isaias.age << endl;
+	cout << "id: " << mark.id << endl;
 
-	int age;
-	cout << "Enter the age: ";
-	cin >> age;
-	cin.ignore(32767, '\n');
-
-	cout << "my name is " << myName << endl;
-	cout << "i'm " << age << " years old. " << endl;
-	cout << "there are " << myName.length() << " characters in my name." << endl;
 	return 0;
 }
